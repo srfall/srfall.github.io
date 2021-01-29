@@ -1,0 +1,22 @@
+name: "srfall"
+#title: ""
+description: |
+  "Project overview"
+navbar:
+  # logo: 
+  #     image: img/mc_logo.png
+  #     href: index.html
+  search: true
+  left:
+    - text: "Home"
+      href: index.html
+    # - text: "About"
+    #   href: about.html
+  right: 
+    - icon: fa-github fa-lg
+      href: http://github.com/srfall/
+output:
+  html_document:
+    theme: cosmo
+base_url: https://srfall.github.io/
+repository_url: https://github.com//srfall/srfall.github.io
