@@ -1,0 +1,25 @@
+---
+title: "Tidy Tuesday"
+knit: (function(input_file, encoding) {
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), 'metaRange.html'))})
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Some visualizations for the [TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday)
+
+
+### [Break Free From Plastic](https://www.breakfreefromplastic.org/)
+### Differnet Data tells different stories 
+
+![./2021_05_plastic_pollution/output/plastic_total.png](https://raw.githubusercontent.com/srfall/tidytuesday/main/2021_05_plastic_pollution/output/plastic_total.png)
+
+![./2021_05_plastic_pollution/output/plastic_per_observer.png](https://raw.githubusercontent.com/srfall/tidytuesday/main/2021_05_plastic_pollution/output/plastic_per_observer.png)
+
+![./2021_05_plastic_pollution/output/plastic_observer_per_event.png](https://raw.githubusercontent.com/srfall/tidytuesday/main/2021_05_plastic_pollution/output/plastic_observer_per_event.png)
+
+

@@ -1,5 +1,5 @@
 ---
-title: "Start"
+title: "Hello Person, welcome to this place."
 knit: (function(input_file, encoding) {
   rmarkdown::render(input_file,
  encoding=encoding,
@@ -12,7 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+![](./img/misc/stasis2.png)
 
+
+
+
+
+### Here you can find a collection of things i have worked on.
