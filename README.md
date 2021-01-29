@@ -1,2 +1,1 @@
-# srfall.github.io
-personal website
+# https://srfall.github.io
