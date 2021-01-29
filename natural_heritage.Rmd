@@ -24,4 +24,3 @@ It was developed as part of a joint course between the students of the [Games En
 My main task was creating the game design with [Daniel Vedder](https://github.com/veddox) & creating the 3D models.
 
 ![](./img/natural_heritage/overview.png)
-![](./img/natural_heritage/150.png)
