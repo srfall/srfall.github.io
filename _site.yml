@@ -12,6 +12,7 @@ navbar:
       href: index.html
     - text: "Science"
       menu:
+        - text: "Species Distribution Model"
         - text: "metaRange"
           href: metaRange.html
     - text: "Data Visualization"  
