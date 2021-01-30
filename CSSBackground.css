@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  background-image: url("https://raw.githubusercontent.com/srfall/srfall.github.io/main/img/misc/stasis2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+div {
+ /* background-color: rgba(255, 255, 255, 0.35)   /* 35% opaque white */
+  padding: 0.25em;
+}
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  /*&nbsp; for empty title*/
+  font-size: 40px;
+  /*color: black;**/
+}

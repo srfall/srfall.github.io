@@ -1,21 +1,14 @@
 ---
-title: "Hello Person, welcome to this place."
+title: "&nbsp;"
 knit: (function(input_file, encoding) {
   rmarkdown::render(input_file,
  encoding=encoding,
  output_file=file.path(dirname(input_file), 'index.html'))})
 output: html_document
+css: CSSBackground.css
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-
-![](./img/misc/stasis2.png)
-
-
-
-
-
+<div class="child">
+# Hello Person, welcome to this place.
 ### Here you can find a collection of things i have worked on.

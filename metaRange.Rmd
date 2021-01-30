@@ -7,11 +7,8 @@ knit: (function(input_file, encoding) {
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-![metaRange](./img/metaRange/logo.png)
+![metaRange](https://raw.githubusercontent.com/srfall/srfall.github.io/main/img/metaRange/logo.png)
 metaRange is the project i'm working on for my Master Thesis. 
 
 
@@ -25,4 +22,4 @@ Secondly, its purpose is to predict the future distribution of species in the re
 
 Contributors are [Juliano Sarmento Cabral](https://github.com/julianoscabral) & [Lea Li](https://github.com/li-lea)
 
-![](./img/metaRange/Test.png)
+![](https://raw.githubusercontent.com/srfall/srfall.github.io/main/img/metaRange/Test.png)
