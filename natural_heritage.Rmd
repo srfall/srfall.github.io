@@ -17,7 +17,7 @@ Natural Heritage is an educational strategy game in which the goal is to balance
 * Various voter groups have to be kept happy
 * Climate change adds additional challenges
 
-It was developed as part of a joint course between the students of the [Games Engineering programm](https://games.uni-wuerzburg.de/) (Jakob Seitz, Tobias Lengfeld, Jan Erik Fischer) & the [CCTB](https://www.biozentrum.uni-wuerzburg.de/cctb/cctb/) ([Daniel Vedder](https://github.com/veddox) & me).
+It was developed as part of a joint course between the students of the [Games Engineering program](https://games.uni-wuerzburg.de/) (Jakob Seitz, Tobias Lengfeld, Jan Erik Fischer) & the [CCTB](https://www.biozentrum.uni-wuerzburg.de/cctb/cctb/) ([Daniel Vedder](https://github.com/veddox) & me).
 My main task was creating the game design with [Daniel Vedder](https://github.com/veddox) & creating the 3D models.
 
 ![](https://raw.githubusercontent.com/srfall/srfall.github.io/main/img/natural_heritage/overview.png)
