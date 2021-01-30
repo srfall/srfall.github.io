@@ -9,7 +9,7 @@ output: html_document
 
 
 ![metaRange](https://raw.githubusercontent.com/srfall/srfall.github.io/main/img/metaRange/logo.png)
-metaRange is the project i'm working on for my Master Thesis. 
+metaRange is the project I'm working on for my Master Thesis. 
 
 
 

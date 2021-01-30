@@ -11,4 +11,4 @@ css: CSSBackground.css
 
 <div class="child">
 # Hello Person, welcome to this place.
-### Here you can find a collection of things i have worked on.
+### Here you can find a collection of things I have worked on.
