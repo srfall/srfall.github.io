@@ -3,9 +3,6 @@ name: "srfall"
 description: |
   "Project overview"
 navbar:
-  # logo: 
-  #     image: img/mc_logo.png
-  #     href: index.html
   search: true
   left:
     - text: "Home"
@@ -15,19 +12,12 @@ navbar:
         - text: "Species Distribution Model"
         - text: "metaRange"
           href: metaRange.html
-    - text: "Data Visualization"  
-      menu:
-        - text: "Tidy Tuesday Challange"
-          href: https://github.com/srfall/tidytuesday/blob/main/README.md
     - text: "Other Projects"
       menu:
         - text: "3D Modeling & Games"
         - text: "Natural Heritage"
           href: NaturalHeritage.html
-        # - text: "Blender"
-        #   href: blender.html
-       # - text: "---------" to seperate
-  right: 
+  right:
     - icon: fa-github fa-lg
       href: http://github.com/srfall/
 output:
