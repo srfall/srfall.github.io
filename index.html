@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>srfall - portfolio</title>
+    <title>Stefan Fallert - portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8"/>
     <meta name="author" content="Stefan Fallert" />
@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    <style>
         html, body {
             width: 100%;
             height: 100%;
@@ -20,10 +20,13 @@
         }
         body {
             background-color: #212f36;
-            background: radial-gradient(circle, rgb(44, 63, 57) 0%, rgb(26, 34, 34) 100%);
+            background:
+                linear-gradient(240deg, rgb(26, 68, 93), rgba(26, 68, 93, 0.5) 45%, rgba(255,0,0,0) 70.71%),
+                linear-gradient(160deg, rgb(162, 127, 97), rgba(162, 141, 97, 0.5) 30%, rgba(0,255,0,0) 70.71%),
+                linear-gradient(0deg, rgb(7, 39, 53), rgba(9, 47, 76, 0.5) 30%, rgba(0,0,255,0) 70.71%);
             background-size: cover;
             background-attachment: local;
-            color: #d6d2c8;
+            color: #eaeaea;
             font-family: "Noto Sans", sans-serif;
             font-optical-sizing: auto;
             font-weight: 400;
@@ -31,16 +34,21 @@
             font-variation-settings: "wdth" 100;
             font-size: large;
         }
+        body h1 {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 60px;
+        }
         header {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(26, 34, 34);
-            color: #d6d2c8;
+            background-color: rgb(26, 30, 34);
             padding: 20px 0px;
             text-align: center;
-            /* position: fixed; */
             top: 0;
             width: 100%;
             z-index: 100;
@@ -52,6 +60,12 @@
         }
         nav a:hover {
             text-decoration: underline;
+        }
+        .display {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
         }
         .center {
             display: flex;
@@ -67,7 +81,7 @@
             background-image: url(assets/grain.png);
         }
         .card {
-            background-color: rgb(26, 34, 34);
+            background-color: rgba(26, 34, 34, 0.7);
             background-image: url(assets/grain.png);
             border-radius: 12px;
             padding: 25px;
@@ -87,15 +101,12 @@
             margin-top: 0;
         }
         .card p {
-            color: #a4a4a4;
+            color: #f4eed7;
         }
         .hero-container {
-            /* background-color: rgb(26, 34, 34); */
             position: relative;
             width: 100%;
             height: 100%;
-            /* margin-top: 220px;
-            margin-bottom: 140px; */
         }
         .image-container {
             position: relative;
@@ -112,11 +123,18 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgb(218, 211, 171);
-            font-size: 48px;
+            color: rgb(255, 247, 225);
+            font-size: 60px;
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             margin: 0;
+        }
+        .hero-overlay-text span {
+            color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            background-image:
+                linear-gradient(170deg, rgba(19, 66, 53, 0.802), rgba(8, 13, 40, 0.8));
         }
         .grid-holder-overview {
             display: grid;
@@ -808,13 +826,17 @@
 
     </script>
     <div id="bird-container" class="hero-container">
-        <h1 class="hero-overlay-text">srfall<br/>ecologist / developer</h1>
+        <span class="hero-overlay-text">
+                Stefan Fallert
+            <br/>
+                ___________________
+            <span class="display">
+            <br/>
+                ecologist / developer
+            </span>
+        </span>
     </div>
     <div class="center">
-        <!-- <div class="hero-container">
-            <h1 class="hero-overlay-text">srfall<br/>ecologist / developer</h1>
-        </div> -->
-
         <div class="card" style="margin-bottom: 20px;">
             <p>
               I'm a PhD student at the University of Würzburg, Germany, in the field of computational ecology.
@@ -824,18 +846,19 @@
             </p>
         </div>
 
-      <h1 id="projects" >Projects</h1>
+      <h1 id="projects">Projects</h1>
     </div>
     <div class="grid-holder-overview">
         <div class="card">
-          <h1>metaRange</h1>
+          <h2>metaRange</h2>
           <div style="display: flex;">
-              <p>
+            <p>
                 [metaRange] is a framework that allows you to build process based species distribution models.
                 They can include a (basically) arbitrary number of environmental factors, processes, species and species interactions.
-                <br/>
-                You may find more information on the project website:
-              </p>
+            <br/>
+            <br/>
+                You may find more information on the project <a href="https://metarange.github.io/">website</a>.
+            </p>
               <a href="https://metarange.github.io/">
                 <div class="image-container">
                     <img src="assets/logo.png" alt="metaRange logo">
@@ -852,8 +875,8 @@
                 See <a href="https://orcid.org/0000-0002-9939-4219">ORCID</a> for a complete overview.
             </p>
         </div>
-        <div id="contact" class="card" style="margin-top: 40px;">
-            <h2>Contact</h2>
+        <h1>Contact</h1>
+        <div id="contact" class="card" style="margin-bottom: 40px;">
             <p>In case of any questions, feel free to reach out via the mail provided on the
                 <a href="https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling-move-to-u-of-birmingham/people/stefan-fallert/">University website</a>.
             </p>
