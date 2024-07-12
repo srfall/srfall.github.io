@@ -41,12 +41,13 @@
             font-weight: 600;
             font-style: normal;
             font-size: 60px;
+            color: rgb(230, 220, 190);
         }
         header {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(26, 30, 34);
+            background-color: rgba(17, 29, 41, 0.281);
             padding: 20px 0px;
             text-align: center;
             top: 0;
@@ -91,17 +92,6 @@
             border-radius: 12px;
             padding: 25px;
         }
-        .badge-card {
-            border-radius: 6px;
-            background: linear-gradient(90deg, rgb(37, 39, 39) 0%, rgb(40, 36, 32) 100%);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            gap: 10px;
-            align-content: center;
-            margin-bottom: 20px;
-            padding: 15px 10px 10px 10px;
-        }
         .card h2 {
             margin-top: 0;
         }
@@ -124,15 +114,15 @@
             touch-action: auto;
             overflow-y: scroll;
             clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
-            background-color: #415e70;
+            background-color: #415e7091;
             animation: showScroll 5s infinite;
             filter: blur(6px);
-            box-shadow: inset 0px 4px rgb(4, 41, 71);
+            box-shadow: inset 0px 4px rgba(4, 41, 71, 0.5);
         }
         @keyframes showScroll {
             0%, 35%, 75%, 100% {
                 transform: translate(-50%, -50%) scale(1);
-                background-color: #415e70;
+                background-color: #415e7070;
             }
             50% {
                 transform: translate(-50%, -40%) scale(1.025);
@@ -142,6 +132,7 @@
         .image-container {
             position: relative;
             width: 100%;
+            max-width: 400px;
             margin: auto;
         }
         .image-container img {
@@ -154,15 +145,18 @@
             top: 42%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgb(255, 247, 225);
-            font-size: 60px;
+            color: rgba(231, 215, 167, 0.3);
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             margin: 0;
         }
-        .hero-overlay-text span {
+        .big-heading {
+            font-size: 140px;
+            backdrop-filter: blur(4px);
+        }
+        .sub-heading {
             color: transparent;
             background-clip: text;
+            font-size: 60px;
             text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
             background-image:
                 linear-gradient(170deg, rgba(19, 66, 53, 0.802), rgba(8, 13, 40, 0.8));
@@ -173,6 +167,29 @@
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             margin: 0 auto;
             grid-gap: 1rem;
+        }
+        .contact-button {
+            position: relative;
+            display: inline-block;
+            padding: 10px 30px;
+            color: #cecdcb;
+            background-color: #333;
+            background-image:
+                linear-gradient(170deg, rgba(19, 41, 66, 0.5), rgba(8, 13, 40, 0.5));
+            border: none;
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            font-size: large;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .contact-button:hover {
+            background-image:
+                linear-gradient(170deg, rgba(19, 64, 66, 0.802), rgba(8, 26, 40, 0.8));
+            text-decoration: underline;
         }
     </style>
 
@@ -858,13 +875,14 @@
     </script>
     <div id="bird-container" class="hero-container">
         <span class="hero-overlay-text">
+            <span class="display big-heading">
                 Stefan Fallert
+            </span>
             <br/>
-               ________________
-            <span class="display">
-            <br/>
+            <span class="display sub-heading">
+                <br/>
                 ecologist
-            <br/>
+                <br/>
                 developer
             </span>
         </span>
@@ -887,17 +905,18 @@
           <h2>metaRange</h2>
           <div style="display: flex;">
             <p>
-                [metaRange] is a framework that allows you to build process based species distribution models.
-                They can include a (basically) arbitrary number of environmental factors, processes, species and species interactions.
+                A framework to build process based species distribution models.
+                They models can include a (basically) arbitrary number of environmental factors, processes, species and species interactions.
+                Written in R and C++.
             <br/>
             <br/>
                 You may find more information on the project <a href="https://metarange.github.io/">website</a>.
             </p>
-              <a href="https://metarange.github.io/">
+            <a href="https://metarange.github.io/">
                 <div class="image-container">
                     <img src="assets/logo.png" alt="metaRange logo">
                 </div>
-              </a>
+            </a>
           </div>
         </div>
     </div>
@@ -909,15 +928,20 @@
                 See <a href="https://orcid.org/0000-0002-9939-4219">ORCID</a> for a complete overview.
             </p>
         </div>
-        <h1>Contact</h1>
-        <div id="contact" class="card" style="margin-bottom: 40px;">
-            <p>Feel free to reach out via:</p>
-            <ul>
-                <li><a href="https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling-move-to-u-of-birmingham/people/stefan-fallert/">University website / mail</a></li>
-                <li><a href="https://github.com/metaRange/metaRange/blob/main/DESCRIPTION#L8">Public OSS maintainer mail</a></li>
-                <li><a href="https://github.com/srfall">Github</a></li>
-                <li><a href="https://www.researchgate.net/profile/Stefan-Fallert">ResearchGate</a></li>
-            </ul>
+        <h1 id="contact">Contact</h1>
+        <div style="display: flex; justify-content: space-evenly; width: 100%; max-width: 1000px; margin-bottom: 40px; flex-wrap: wrap; gap: 10px;">
+            <a href="https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling-move-to-u-of-birmingham/people/stefan-fallert/">
+                <button class="contact-button">University website</button>
+            </a>
+            <a href="https://github.com/metaRange/metaRange/blob/main/DESCRIPTION#L8">
+                <button class="contact-button">Mail</button>
+            </a>
+            <a href="https://github.com/srfall">
+                <button class="contact-button">GitHub</button>
+            </a>
+            <a href="https://www.researchgate.net/profile/Stefan-Fallert">
+                <button class="contact-button">ResearchGate</button>
+            </a>
         </div>
     </div>
   </div>
