@@ -44,8 +44,7 @@
         }
         header {
             display: flex;
-            justify-content: space-between;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             background-color: rgb(26, 30, 34);
             padding: 20px 0px;
@@ -54,10 +53,15 @@
             width: 100%;
             z-index: 100;
         }
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            max-width: 1000px;
+        }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 20px;
         }
         nav a:hover {
             text-decoration: underline;
@@ -111,7 +115,7 @@
         }
         .hero-anchor-scrollable {
             position: absolute;
-            top: 90%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 80px;
@@ -120,17 +124,19 @@
             touch-action: auto;
             overflow-y: scroll;
             clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
-            background-color: rgb(26, 68, 93);
+            background-color: #415e70;
             animation: showScroll 5s infinite;
+            filter: blur(6px);
+            box-shadow: inset 0px 4px rgb(4, 41, 71);
         }
         @keyframes showScroll {
             0%, 35%, 75%, 100% {
                 transform: translate(-50%, -50%) scale(1);
-                background-color: rgb(26, 68, 93);
+                background-color: #415e70;
             }
             50% {
                 transform: translate(-50%, -40%) scale(1.025);
-                background-color: rgb(34, 81, 109);
+                background-color: rgb(89, 120, 138);
             }
         }
         .image-container {
@@ -145,7 +151,7 @@
         }
         .hero-overlay-text {
             position: absolute;
-            top: 50%;
+            top: 42%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: rgb(255, 247, 225);
