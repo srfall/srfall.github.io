@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
         html, body {
             width: 100%;
             height: 100%;
@@ -33,6 +34,10 @@
             font-style: normal;
             font-variation-settings: "wdth" 100;
             font-size: large;
+        }
+        /* tying to get rid of a white slice that appears on mobile when scrolling */
+        * {
+            box-sizing: border-box;
         }
         body h1 {
             font-family: "Playfair Display", serif;
@@ -151,8 +156,8 @@
         <nav>
             <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
+            <a href="#CV">CV</a>
             <a href="#contact">Contact</a>
-            <a href="https://github.com/srfall">Github</a>
         </nav>
     </header>
     <script type="importmap">
@@ -829,10 +834,12 @@
         <span class="hero-overlay-text">
                 Stefan Fallert
             <br/>
-                ___________________
+                __________________
             <span class="display">
             <br/>
-                ecologist / developer
+                ecologist
+            <br/>
+                developer
             </span>
         </span>
     </div>
@@ -877,9 +884,13 @@
         </div>
         <h1>Contact</h1>
         <div id="contact" class="card" style="margin-bottom: 40px;">
-            <p>In case of any questions, feel free to reach out via the mail provided on the
-                <a href="https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling-move-to-u-of-birmingham/people/stefan-fallert/">University website</a>.
-            </p>
+            <p>Feel free to reach out via:</p>
+            <ul>
+                <li><a href="https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling-move-to-u-of-birmingham/people/stefan-fallert/">University website / mail</a></li>
+                <li><a href="https://github.com/metaRange/metaRange/blob/main/DESCRIPTION#L8">Public OSS maintainer mail</a></li>
+                <li><a href="https://github.com/srfall">Github</a></li>
+                <li><a href="https://www.researchgate.net/profile/Stefan-Fallert">ResearchGate</a></li>
+            </ul>
         </div>
     </div>
   </div>
