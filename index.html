@@ -105,11 +105,22 @@
         }
         .hero-anchor-scrollable {
             position: absolute;
+            top: 80%;
+            transform: translate(0%, -50%);
+            width: 100%;
+            height: 200px;
+            z-index: 90;
+            touch-action: auto;
+            overflow-y: scroll;
+            background-color: transparent;
+        }
+        .hero-anchor-symbol {
+            position: absolute;
             top: 85%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
+            width: 180px;
+            height: 180px;
             z-index: 100;
             touch-action: auto;
             overflow-y: scroll;
@@ -120,12 +131,12 @@
             box-shadow: inset 0px 4px rgba(4, 41, 71, 0.5);
         }
         @keyframes showScroll {
-            0%, 30%, 75%, 100% {
+            0%, 25%, 75%, 100% {
                 transform: translate(-50%, -50%) scale(1);
                 background-color: #415e7070;
             }
             50% {
-                transform: translate(-50%, -40%) scale(1.025);
+                transform: translate(-50%, -40%);
                 background-color: rgb(89, 120, 138);
             }
         }
@@ -151,15 +162,12 @@
         }
         .big-heading {
             font-size: 125px;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(2px);
         }
         .sub-heading {
-            color: transparent;
-            background-clip: text;
+            color: rgba(12, 20, 45, 0.802);
             font-size: 60px;
             text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-            background-image:
-                linear-gradient(170deg, rgba(19, 66, 53, 0.802), rgba(8, 13, 40, 0.8));
         }
         .grid-holder-overview {
             display: grid;
@@ -887,6 +895,7 @@
             </span>
         </span>
         <div id="mobile-scroll" class="hero-anchor-scrollable"></div>
+        <div class="hero-anchor-symbol"></div>
     </div>
     <div class="center">
         <div class="card" style="margin-bottom: 20px;">
