@@ -610,8 +610,8 @@
                     const y = ~ ~ ( birdIndex / WIDTH ) / WIDTH;
 
                     const c = new THREE.Color(
-                        0x666666 +
-                        ~ ~ ( v / 9 ) / BIRDS * 0x666666
+                        (0x666666 +
+                        ~ ~ ( v / 9 ) / BIRDS * 0x666666) * 0.75
                     );
 
                     birdColors.array[ v * 3 + 0 ] = c.r;
