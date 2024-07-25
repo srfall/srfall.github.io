@@ -46,6 +46,10 @@
             font-style: normal;
             font-size: 60px;
             color: rgb(230, 220, 190);
+            padding-top: 40px;
+        }
+        p {
+            line-height: 160%;
         }
         header {
             display: flex;
@@ -90,9 +94,12 @@
             background-image: url(assets/grain.png);
             border-radius: 12px;
             padding: 25px;
+            box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
         }
         .card h2 {
             margin-top: 0;
+            margin-bottom: 10px;
+            color: #f3f0e3;
         }
         .card p {
             color: #f4eed7;
@@ -176,6 +183,24 @@
             margin: 0 auto;
             grid-gap: 1rem;
         }
+        .conf-list-grid {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 20px;
+        }
+
+        .conf-list-grid li {
+            border: 2px solid #212f36;
+            color: #f4eed7;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+
         .contact-button {
             position: relative;
             display: inline-block;
@@ -923,7 +948,6 @@
                 The models can include a (basically) arbitrary number of environmental factors, processes, species and species interactions.
                 Written in R and C++.
             <br/>
-            <br/>
                 You may find more information on the project <a href="https://metarange.github.io/">website</a>.
             </p>
             <a href="https://metarange.github.io/">
@@ -935,11 +959,119 @@
         </div>
     </div>
 
+    <div class="center">
+        <h1 id="projects">Expertise</h1>
+    </div>
+    <div class="grid-holder-overview">
+        <div class="card">
+            <h2>Ecology</h2>
+            <div style="display: flex;">
+                <p>
+                    (meta) population dynamics, mechanistic models, species interactions, human impact
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Teaching</h2>
+            <div style="display: flex;">
+                <p>
+                    teaching assistant for programming courses, co-supervision of Bachelor thesis
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Data analysis</h2>
+            <div style="display: flex;">
+                <p>
+                    time series, predictions, uncertainty, georeferenced data
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Data visualization</h2>
+            <div style="display: flex;">
+                <p>
+                    intuitive design, complex relationships, interactive experiences
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Game development</h2>
+            <div style="display: flex;">
+                <p>
+                    game logic, random map generation, 3D modeling, UI / UX
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Programming</h2>
+            <div style="display: flex;">
+                <p>
+                    <span class="bold">Languages:</span>
+                    <br/>
+                    R, JavaScript, C++, Python, Julia
+                </p>
+                <p>
+                    <span class="bold">Skills:</span>
+                    <br/>
+                    Git, SVN, Linux, CI/CD, Unit testing, HPC cluster (SLURM)
+                </p>
+            </div>
+        </div>
+    </div>
     <div id="publications" class="center">
         <h1>Publications</h1>
         <div class="card">
             <p>
                 See <a href="https://orcid.org/0000-0002-9939-4219">ORCID</a> for a complete overview.
+            </p>
+        </div>
+        <h1>Conferences / Talks</h1>
+        <div class="card">
+            <ul class="conf-list-grid">
+                <li>
+                    <span class="conf-year bold">2024 | </span>
+                    <span class="conf-type">Poster : </span>
+                    <span class="conf-name">Ecological Forecasting Initiative (EFI)</span>
+                    <span class="conf-place"> - [Helsinki]</span>
+                </li>
+                <li>
+                    <span class="conf-year bold">2023 | </span>
+                    <span class="conf-type">Poster : </span>
+                    <span class="conf-name">European Conference on Ecological Modelling (ECEM)</span>
+                    <span class="conf-place"> - [Leipzig]</span>
+                </li>
+                <li>
+                    <span class="conf-year bold">2023 | </span>
+                    <span class="conf-type">Talk : </span>
+                    <span class="conf-name">Young Modellers in Ecology (YoMos)</span>
+                    <span class="conf-place"> - [Hohenroda]</span>
+                </li>
+                <li>
+                    <span class="conf-year bold">2022 | </span>
+                    <span class="conf-type">Talk : </span>
+                    <span class="conf-name">International Biogeography Society (IBS)</span>
+                    <span class="conf-place"> - [Vancouver / online]</span>
+                </li>
+                <li>
+                    <span class="conf-year bold">2022 | </span>
+                    <span class="conf-type">Talk : </span>
+                    <span class="conf-name">Young Modellers in Ecology (YoMos)</span>
+                    <span class="conf-place"> - [online]</span>
+                </li>
+                <li>
+                    <span class="conf-year bold">2021 | </span>
+                    <span class="conf-type">Talk : </span>
+                    <span class="conf-name">Young Modellers in Ecology (YoMos)</span>
+                    <span class="conf-place"> - [online]</span>
+                </li>
+            </ul>
+        </div>
+        <h1>Grants</h1>
+        <div class="card">
+            <h2>Doctoral scholarship</h2>
+            <p>
+                <a href= "https://www.dbu.de/promotionsstipendium/20021-703/">Deutsche Bundesstiftung Umwelt (DBU)</a> | 01.09.2021 - 31.08.2024
             </p>
         </div>
         <h1 id="contact">Contact</h1>
